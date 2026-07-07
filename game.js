@@ -386,6 +386,16 @@ function buildWorld() {
       worldPipes.push({ x: px, y: H - TILE*(3+ph), w: TILE*2, h: TILE*(ph+1), si, pi, label: '' });
     });
 
+    // Coins — floating above ground in open stretches
+    const coinXs = [ox+80, ox+200, ox+540, ox+600, ox+650];
+    coinXs.forEach((cx, ci) => {
+      worldCoins.push({
+        x: cx,
+        y: H - TILE*3 - TILE*3.2,   // hover nicely above ground
+        id: `c-${si}-${ci}`,
+      });
+    });
+
     // Section flag / sign
     worldFlags.push({
       x: ox + SECTION_W - 80,
