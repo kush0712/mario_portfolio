@@ -28,6 +28,10 @@ html, body {
   background: #000;
   font-family: 'Press Start 2P', monospace;
   image-rendering: pixelated;
+  /* Prevent iOS rubber-band bounce scroll */
+  position: fixed;
+  width: 100%;
+  touch-action: none;
 }
 
 /* ===== TITLE SCREEN ===== */
@@ -179,8 +183,9 @@ html, body {
   position: fixed; top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   width: min(700px, 95vw);
-  max-height: 80vh;
+  max-height: 85vh;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
   background: var(--panel-bg);
   border: 4px solid var(--accent);
   border-radius: 4px;
@@ -338,27 +343,51 @@ html, body {
 /* ===== MOBILE CONTROLS ===== */
 #mobile-controls {
   display: none;
-  position: fixed; bottom: 20px; left: 0; right: 0;
+  position: fixed; bottom: 0; left: 0; right: 0;
   z-index: 50; pointer-events: none;
+  padding: 12px 16px 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
 }
 .mobile-row {
-  display: flex; justify-content: space-between; padding: 0 30px;
+  display: flex; justify-content: space-between; align-items: center;
   pointer-events: all;
 }
 .mob-btn {
   font-family: 'Press Start 2P', monospace;
-  font-size: 18px; width: 58px; height: 58px;
-  background: rgba(0,0,0,0.6); color: #fff;
-  border: 3px solid rgba(255,255,255,0.4);
-  border-radius: 8px; cursor: pointer;
-  user-select: none; -webkit-tap-highlight-color: transparent;
+  font-size: 22px;
+  width: 72px; height: 72px;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  border: 3px solid rgba(255,255,255,0.5);
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
   display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.5);
+  transition: background 0.1s;
 }
-.mob-btn:active { background: rgba(248,184,0,0.4); }
+.mob-btn:active {
+  background: rgba(248,184,0,0.5);
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.5);
+}
 
-@media (pointer: coarse), (max-width: 600px) {
+@media (pointer: coarse), (max-width: 768px) {
   #mobile-controls { display: block; }
-  #gameCanvas { margin-bottom: 100px; }
+  #gameCanvas { margin-bottom: 110px; }
+  #info-panel {
+    width: 96vw;
+    max-height: 80vh;
+    padding: 20px 16px 16px;
+  }
+  .panel-zone p, .panel-zone ul li {
+    font-size: 13px;
+  }
+  .panel-zone .metric-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
 }
 
 /* ===== COIN POP ===== */
