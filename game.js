@@ -973,6 +973,24 @@ function openPanel(si) {
       html += `<a class="gh-link" href="${s.url}" target="_blank" rel="noopener">${s.label}</a>`;
     });
     html += `</div>`;
+    html += `<div style="margin-top:20px;padding-top:18px;border-top:1px solid rgba(248,184,0,0.25);">
+      <a href="Kushagra_Jaiswal_Resume-4.pdf" download="Kushagra_Jaiswal_Resume.pdf"
+         style="display:inline-flex;align-items:center;gap:10px;
+                background:linear-gradient(135deg,#f8d820,#f8a000);
+                color:#000;font-family:'Press Start 2P',monospace;font-size:10px;
+                padding:14px 22px;border-radius:4px;text-decoration:none;
+                border-bottom:4px solid #a06000;border-right:4px solid #a06000;
+                box-shadow:0 4px 16px rgba(248,184,0,0.35);
+                transition:transform 0.1s,box-shadow 0.1s;"
+         onmousedown="this.style.transform='translate(2px,2px)';this.style.borderWidth='2px';"
+         onmouseup="this.style.transform='';this.style.borderWidth='4px';"
+         onmouseleave="this.style.transform='';this.style.borderWidth='4px';">
+        ⬇ DOWNLOAD RESUME
+      </a>
+      <p style="font-family:Inter,sans-serif;font-size:11px;color:#94a3b8;margin-top:10px;">
+        PDF · Works on all devices
+      </p>
+    </div>`;
   }
   else if (sec.id === 'education') {
     data.schools.forEach(s => {
