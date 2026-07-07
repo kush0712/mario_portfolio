@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kushagra Jaiswal – Portfolio Quest 🍄</title>
+  <meta name="description" content="Kushagra Jaiswal's interactive Super Mario Bros style portfolio – AI/ML Engineer & Full Stack Developer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ TITLE SCREEN ============ -->
+<div id="title-screen">
+  <div class="title-stars"></div>
+  <div class="title-content">
+    <div class="title-logo">
+      <span class="logo-pixel">KJ</span>
+    </div>
+    <h1 class="title-main">KUSHAGRA JAISWAL</h1>
+    <p class="title-sub">AI/ML Engineer &nbsp;|&nbsp; Full Stack Dev</p>
+    <p class="title-tag">Shipping AI Products with LLMs, RAG &amp; Gen AI</p>
+    <p class="title-tag2">CSE Undergrad @ MIT-WPU '27</p>
+    <div class="title-btn-wrap">
+      <button id="start-btn" class="pixel-btn">▶ &nbsp;PRESS START</button>
+    </div>
+    <p class="title-hint">Use Arrow Keys / WASD to move &nbsp;|&nbsp; Space / Up to jump</p>
+  </div>
+</div>
+
+<!-- ============ GAME WRAPPER ============ -->
+<div id="game-wrapper" class="hidden">
+
+  <!-- HUD -->
+  <div id="hud">
+    <div class="hud-item">
+      <span class="hud-label">PLAYER</span>
+      <span class="hud-val" id="hud-name">KUSHAGRA</span>
+    </div>
+    <div class="hud-item">
+      <span class="hud-label">STAGE</span>
+      <span class="hud-val" id="hud-stage">1-1</span>
+    </div>
+    <div class="hud-item">
+      <span class="hud-label">COINS</span>
+      <span class="hud-val" id="hud-coins">0</span>
+    </div>
+    <div class="hud-item">
+      <span class="hud-label">WORLD</span>
+      <span class="hud-val">KJ QUEST</span>
+    </div>
+  </div>
+
+  <!-- Stage labels (flags) -->
+  <div id="stage-labels"></div>
+
+  <!-- Game canvas -->
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Info panel (popup) -->
+  <div id="info-panel" class="hidden">
+    <button id="close-panel" aria-label="Close">✕</button>
+    <div id="info-content"></div>
+  </div>
+
+  <!-- Mobile controls -->
+  <div id="mobile-controls">
+    <div class="mobile-row">
+      <button class="mob-btn" id="mob-left">◀</button>
+      <button class="mob-btn" id="mob-jump">▲</button>
+      <button class="mob-btn" id="mob-right">▶</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
