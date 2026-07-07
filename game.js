@@ -585,14 +585,19 @@ function update() {
     }
   });
 
-  // Flag / section triggers
+  // Flag / section triggers — re-triggerable on each entry
   worldFlags.forEach(f => {
-    if (triggeredFlags.has(f.id)) return;
     const fx = f.x, fy = f.y;
-    if (mario.x+mario.w > fx && mario.x < fx+TILE*2 &&
-        mario.y+mario.h > fy && mario.y < fy+TILE*8) {
-      triggeredFlags.add(f.id);
-      openPanel(f.si);
+    const inside = mario.x+mario.w > fx && mario.x < fx+TILE*2 &&
+                   mario.y+mario.h > fy && mario.y < fy+TILE*8;
+    if (inside) {
+      if (!triggeredFlags.has(f.id)) {
+        triggeredFlags.add(f.id);
+        openPanel(f.si);
+      }
+    } else {
+      // Mario has left the zone — reset so re-entry works
+      triggeredFlags.delete(f.id);
     }
   });
 
