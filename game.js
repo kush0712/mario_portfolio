@@ -81,7 +81,7 @@ const SECTIONS = [
     bgGradient: ['#180040','#0a0028'],
   },
   {
-    id: 'contact', label: 'BONUS', title: 'LET\'S CONNECT',
+    id: 'contact', label: 'BONUS', title: 'BONUS',
     color: '#380000', accent: '#ff4444',
     blockColor: '#aa0000',
     pipeColor: '#660000',
@@ -1104,18 +1104,18 @@ function openPanel(si) {
         💼 linkedin.com/in/kushagra-jaiswal-kj
       </a>
       <span style="color:#cbd5e1; font-family:Inter,sans-serif; font-size:15px; font-weight:500; display:flex; align-items:center; gap:8px;">
-        📱 +91 7498779942
+        📱 +91 8840256455
       </span>
     </div>`;
 
     html += `<div style="margin-top:20px; padding-top:24px; padding-bottom: 24px; border-top:1px solid rgba(255,68,68,0.25);">
       <a href="Kushagra_Jaiswal_Resume-4.pdf" download="Kushagra_Jaiswal_Resume.pdf"
          style="display:inline-flex; align-items:center; gap:10px;
-                background:linear-gradient(135deg,#ff4444,#aa0000);
+                background:linear-gradient(135deg,#cc88ff,#9933ff);
                 color:#fff; font-family:'Press Start 2P',monospace; font-size:10px;
                 padding:14px 22px; border-radius:4px; text-decoration:none;
-                border-bottom:4px solid #440000; border-right:4px solid #440000;
-                box-shadow:0 4px 16px rgba(255,68,68,0.35);
+                border-bottom:4px solid #4a0080; border-right:4px solid #4a0080;
+                box-shadow:0 4px 16px rgba(204,136,255,0.35);
                 transition:transform 0.1s, box-shadow 0.1s;"
          onmousedown="this.style.transform='translate(2px,2px)';this.style.borderWidth='2px';"
          onmouseup="this.style.transform='';this.style.borderWidth='4px';"
