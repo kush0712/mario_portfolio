@@ -87,9 +87,9 @@ const PORTFOLIO = {
     title: 'ABOUT ME',
     badge: 'STAGE 1-1',
     lines: [
-      'Hey! I\'m Kushagra — an AI/ML Engineer and Full Stack Developer who loves shipping real-world solutions.',
+      'Hey! I\'m Kushagra, an AI/ML Engineer and Full Stack Developer who loves shipping real-world solutions.',
       'I\'m highly project-driven, always building things that solve actual problems. I enjoy tackling difficult engineering challenges and measuring outcomes with hard numbers.',
-      'Applying AI to practical problems is my sweet spot — from RAG pipelines to CV models. I\'m comfortable learning any new technology the problem demands.',
+      'Applying AI to practical problems is my sweet spot: from RAG pipelines to CV models. I\'m comfortable learning any new technology the problem demands.',
     ],
     traits: ['Project-Driven', 'Real-World Solutions', 'AI Enthusiast', 'Engineering Problem Solver', 'Measurable Outcomes', 'Fast Learner'],
     social: [
@@ -105,22 +105,22 @@ const PORTFOLIO = {
       {
         name: 'MIT World Peace University',
         location: 'Pune, India',
-        degree: 'B.Tech — Computer Science & Engineering',
-        period: 'July 2023 – June 2027',
+        degree: 'B.Tech - Computer Science & Engineering',
+        period: 'July 2023 - June 2027',
         score: 'CGPA: 7.47 / 10',
         label: 'University',
       },
       {
         name: 'Guru Nanak Public School, Dalhousie',
         degree: 'XII CBSE',
-        period: '2021 – 2022',
+        period: '2021 - 2022',
         score: '85.2%',
         label: 'Higher Secondary',
       },
       {
         name: 'Guru Nanak Public School, Dalhousie',
         degree: 'X CBSE',
-        period: '2019 – 2020',
+        period: '2019 - 2020',
         score: '97%',
         label: 'Secondary',
       },
@@ -249,7 +249,7 @@ const PORTFOLIO = {
           { val: '8KB', label: 'Buffer Size' },
         ],
         bullets: [
-          'Browser-based LAN file-sharing server — upload, download, search & track transfers with no client software.',
+          'Browser-based LAN file-sharing server: upload, download, search & track transfers with no client software.',
           'Handles files up to 500MB via 8KB buffered streaming with SHA-256 integrity verification.',
           'Secured against SQL injection with PreparedStatements; HikariCP pool for 10 concurrent connections.',
         ],
@@ -263,7 +263,7 @@ const PORTFOLIO = {
       {
         role: 'QA Intern',
         org: 'Assertion Inc.',
-        period: 'July 2026 – Present',
+        period: 'July 2026 - Present',
         domain: 'Enterprise Voice Security',
         bullets: [
           'Achieved 95%+ test coverage across core SIP routing and API orchestration modules.',
@@ -287,13 +287,13 @@ const PORTFOLIO = {
       {
         role: 'Videographer & Video Editor',
         org: 'MIT-WPU Shutterbugs (Media Club)',
-        period: '2024 – Present',
+        period: '2024 - Present',
         desc: 'Creating visual media and covering events for the university media club.',
       },
       {
         role: 'Media Creator',
         org: 'MIT-WPU SquadUP (Esports Club)',
-        period: '2024 – Present',
+        period: '2024 - Present',
         desc: 'Created media and covered government-college collaboration events such as Maratha Esports.',
       },
       {
@@ -1002,9 +1002,6 @@ function openPanel(si) {
          onmouseleave="this.style.transform='';this.style.borderWidth='4px';">
         ⬇ DOWNLOAD RESUME
       </a>
-      <p style="font-family:Inter,sans-serif;font-size:11px;color:#94a3b8;margin-top:10px;">
-        PDF · Works on all devices
-      </p>
     </div>`;
   }
   else if (sec.id === 'education') {
@@ -1115,9 +1112,6 @@ function openPanel(si) {
          onmouseleave="this.style.transform='';this.style.borderWidth='4px';">
         ⬇ DOWNLOAD RESUME
       </a>
-      <p style="font-family:Inter,sans-serif; font-size:11px; color:#94a3b8; margin-top:10px;">
-        PDF · Works on all devices
-      </p>
     </div>`;
   }
 
