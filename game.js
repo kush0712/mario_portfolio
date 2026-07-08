@@ -323,7 +323,7 @@ const GRAVITY    = 0.55;
 const JUMP_VEL   = -13;
 const MOVE_SPD   = 4.5;
 const SECTION_W  = 720; // px per section
-const TOTAL_W    = SECTION_W * SECTIONS.length;
+const TOTAL_W    = SECTION_W * SECTIONS.length + 200;
 
 // ─── STATE ────────────────────────────────────────────────
 let canvas, ctx, W, H;
