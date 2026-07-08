@@ -81,7 +81,7 @@ const SECTIONS = [
     bgGradient: ['#180040','#0a0028'],
   },
   {
-    id: 'contact', label: '1-7', title: 'LET\'S CONNECT',
+    id: 'contact', label: 'BONUS', title: 'LET\'S CONNECT',
     color: '#380000', accent: '#ff4444',
     blockColor: '#aa0000',
     pipeColor: '#660000',
@@ -310,6 +310,10 @@ const PORTFOLIO = {
         desc: 'Served as Outreach Leader for RTEP, a national-level research paper conference.',
       },
     ],
+  },
+  contact: {
+    title: 'LET\'S CONNECT',
+    badge: 'BONUS STAGE',
   },
 };
 
