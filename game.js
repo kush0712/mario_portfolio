@@ -263,7 +263,7 @@ const PORTFOLIO = {
       {
         role: 'QA Intern',
         org: 'Assertion Inc.',
-        period: 'July 2026 – Dec 2026',
+        period: 'July 2026 – Present',
         domain: 'Enterprise Voice Security',
         bullets: [
           'Achieved 95%+ test coverage across core SIP routing and API orchestration modules.',
@@ -1081,6 +1081,44 @@ function openPanel(si) {
         <div class="ec-desc">${e.desc}</div>
       </div>`;
     });
+    
+    // Add "Let's Connect" section at the end of the last panel
+    html += `<h2 style="margin-top:32px; border-bottom: 2px solid #cc88ff; color: #cc88ff;">LET'S CONNECT</h2>`;
+    html += `<p style="font-size:15px; color:#ffffff; line-height:1.6; margin-bottom: 20px;">
+      I'm always open to discussing new opportunities, creative projects, or ways to be part of your vision. 
+      Feel free to reach out to me!
+    </p>`;
+    
+    html += `<div style="display:flex; flex-direction:column; gap:12px; margin-bottom: 30px;">
+      <a href="mailto:kushagra.jaiswal0712@gmail.com" style="color:#88ccff; text-decoration:none; font-family:Inter,sans-serif; font-size:15px; font-weight:600; display:flex; align-items:center; gap:8px;">
+        ✉️ kushagra.jaiswal0712@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/kushagra-jaiswal-kj" target="_blank" rel="noopener" style="color:#88ccff; text-decoration:none; font-family:Inter,sans-serif; font-size:15px; font-weight:600; display:flex; align-items:center; gap:8px;">
+        💼 linkedin.com/in/kushagra-jaiswal-kj
+      </a>
+      <span style="color:#cbd5e1; font-family:Inter,sans-serif; font-size:15px; font-weight:500; display:flex; align-items:center; gap:8px;">
+        📱 +91 7498779942
+      </span>
+    </div>`;
+
+    html += `<div style="margin-top:20px; padding-top:24px; padding-bottom: 24px; border-top:1px solid rgba(204,136,255,0.25);">
+      <a href="Kushagra_Jaiswal_Resume-4.pdf" download="Kushagra_Jaiswal_Resume.pdf"
+         style="display:inline-flex; align-items:center; gap:10px;
+                background:linear-gradient(135deg,#cc88ff,#9933ff);
+                color:#fff; font-family:'Press Start 2P',monospace; font-size:10px;
+                padding:14px 22px; border-radius:4px; text-decoration:none;
+                border-bottom:4px solid #4a0080; border-right:4px solid #4a0080;
+                box-shadow:0 4px 16px rgba(204,136,255,0.35);
+                transition:transform 0.1s, box-shadow 0.1s;"
+         onmousedown="this.style.transform='translate(2px,2px)';this.style.borderWidth='2px';"
+         onmouseup="this.style.transform='';this.style.borderWidth='4px';"
+         onmouseleave="this.style.transform='';this.style.borderWidth='4px';">
+        ⬇ DOWNLOAD RESUME
+      </a>
+      <p style="font-family:Inter,sans-serif; font-size:11px; color:#94a3b8; margin-top:10px;">
+        PDF · Works on all devices
+      </p>
+    </div>`;
   }
 
   html += `</div>`;
